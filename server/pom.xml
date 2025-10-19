@@ -9,6 +9,7 @@
     <groupId>com.example.maven-project</groupId>
     <artifactId>maven-project</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
   </parent>
 
   <artifactId>server</artifactId>
@@ -16,7 +17,7 @@
   <name>Server Module</name>
 
   <dependencies>
-    <!-- Example: JUnit and Mockito (versions inherited from parent) -->
+    <!-- Testing frameworks (inherit versions from parent) -->
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
