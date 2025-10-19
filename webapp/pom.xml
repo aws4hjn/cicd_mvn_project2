@@ -9,6 +9,7 @@
     <groupId>com.example.maven-project</groupId>
     <artifactId>maven-project</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
   </parent>
 
   <artifactId>webapp</artifactId>
@@ -16,14 +17,14 @@
   <name>WebApp Module</name>
 
   <dependencies>
-    <!-- Tomcat 9 compatible Servlet API -->
+    <!-- Provided by Tomcat runtime -->
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
       <scope>provided</scope>
     </dependency>
 
-    <!-- Example: Link to your server module -->
+    <!-- Link to server module -->
     <dependency>
       <groupId>com.example.maven-project</groupId>
       <artifactId>server</artifactId>
